@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container fade-in">
+    <h2>💰 Expense Tracker</h2>
+
+    <!-- Budget Section -->
+    <div class="card">
+        <h3>Set Monthly Budget</h3>
+        <input type="number" id="budgetInput" placeholder="Enter budget">
+        <button onclick="setBudget()">Set Budget</button>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+        <div>
+            <p>Budget</p>
+            <span id="budget">0</span>
+        </div>
+        <div>
+            <p>Expenses</p>
+            <span id="expense">0</span>
+        </div>
+        <div>
+            <p>Balance</p>
+            <span id="balance">0</span>
+        </div>
+    </div>
+
+    <!-- Add Expense -->
+    <div class="card">
+        <h3>Add Expense</h3>
+        <input type="text" id="title" placeholder="Expense title">
+        <input type="number" id="amount" placeholder="Amount">
+        <button onclick="addExpense()">Add</button>
+    </div>
+
+    <!-- Expense List -->
+    <div class="card">
+        <h3>Expense History</h3>
+        <ul id="list"></ul>
+    </div>
+
+    <!-- Monthly Summary -->
+    <div class="card">
+        <h3>Monthly Summary</h3>
+        <p>Total Expenses This Month: ₹<span id="monthlyTotal">0</span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
